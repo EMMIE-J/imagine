@@ -174,22 +174,86 @@ participants;
 
 
 
-// Arrays in JavaScript
-const users = [
-  {
-   username: 'emmie-j',
-    password: '0123',
-    email: 'attachiegrace408@gmail.com'
-  },
+// // Arrays in JavaScript
+// const users = [
+//   {
+//    username: 'emmie-j',
+//     password: '0123',
+//     email: 'attachiegrace408@gmail.com'
+//   },
 
-  {
-   username: 'rammie',
-    password: '1234',
-    email: 'rammie1000@yahoo.com'
-  },
+//   {
+//    username: 'rammie',
+//     password: '1234',
+//     email: 'rammie1000@yahoo.com'
+//   },
   
-];
-users;
+// ];
+// users;
+
+// Write a function that will take a user with firstname, lastname and fullname;
+function fullName(user) {
+  return {
+    ...user,
+    fullname: `${user.firstname} ${user.lastname}`
+ };
+}
+const user = {
+  firstname: 'John',
+  lastname: 'Quayson'  
+}
+
+fullName(user);
+
+
+// Array map
+const users = [
+{firstname:  'Emmie', lastname: 'Jennings'},
+{firstname: 'Eliana', lastname: 'Ranyke'},
+{firstname: 'Elvis', lastname: 'Ranyke'},
+{firstname: 'Cyrus', lastname: 'Ranyke'},
+{firstname: 'Queeneth', lastname: 'Lamptey'}
+]
+// users.map(fullName);
+
+
+
+// Square of Numbers
+function square(number) {
+  return number **2;
+}
+square(7);
+
+
+const numbers = [9, 8, 7, 6];
+numbers.map(square);
+
+// Array filter
+
+// Write a function that takes a number, if the number is odd, return it as false and return as true if the number is even.
+
+function isEven(number) {
+  return number % 2 ===0;
+}
+isEven(6);
+numbers.filter(isEven);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
 
 
 
