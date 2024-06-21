@@ -266,7 +266,46 @@ resetPassword("attachiegrace408@gmail.com");
 user;
    
  
+// You have been given an array of students with some of them marked as absent and others marked as present.
+// Write a function that returns the total number of students present.
+const students = [
+  {id: 1, present: true},
+  {id: 2, present: true},
+  {id: 3, present: false},
+  {id: 4, present: true},
+  {id: 5, present: false},
+]
 
+function studentsPresent(students) {
+  // Define a variable to track the total present
+  let total = 0;
+  // Begin a Loop
+  for (let i = 0; i < students.length; i++) {
+    //  For any iteration if student is present then increase total present by 1;
+    if (students[i].present === true) {
+      total++
+    }
+  }
+  //  Return total
+  return total;
+}
+
+studentsPresent(students);
+
+// Classes in JavaScript
+class Laptop {
+  constructor(brand, color) {
+    this.brand = brand;
+    this.color = color;
+  }
+}
+
+const laptop1 = new Laptop('Dell', 'black');
+const laptop2 = new Laptop('HP', 'silver');
+laptop1.brand;
+laptop2.brand;
+laptop1.color
+laptop2.color
 
 
 
